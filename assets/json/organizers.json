@@ -1,0 +1,83 @@
+[
+  {
+    "organizer_name": "Flutter Mumbai Community",
+    "small_description": "Flutter Mumbai Community is all about learning and sharing knowledge about flutter and its related technologies.\nIf you are from a different background, you can join if you are enthusiastic about learning & sharing with fellow developers from Mumbai.",
+    "logo": "assets/Organizer_Logo/flutter_mumbai_logo.jpg",
+    "twitter_handle": "https://twitter.com/MumbaiFlutter",
+    "facebook_handle": "https://www.facebook.com/fluttermumbai",
+    "meetup_handle": "https://www.meetup.com/Mumbai-Flutter",
+    "instagram_handle": "https://www.instagram.com/mumbaiflutter"
+  },
+  {
+    "organizer_name": "Flutter Ahemdabad",
+    "small_description": "Software Development has been divided for long. Flutter lets us build beautiful Mobile, Web and Desktop applications in record time. Whether you are just starting a new Flutter project, or an experienced dev looking to discuss advanced topics, this is where you belong!",
+    "logo": "assets/Organizer_Logo/flutter_ahm_logo.png",
+    "twitter_handle": "https://twitter.com/flutterahm",
+    "facebook_handle": "",
+    "meetup_handle": "https://www.meetup.com/FlutterAHM",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Vadodara",
+    "small_description": "",
+    "logo": "assets/Organizer_Logo/flutter_vadodara_logo.jpg",
+    "twitter_handle": "https://twitter.com/fluttervadodara",
+    "facebook_handle": "",
+    "meetup_handle": "",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Nagpur",
+    "small_description": "Calling all Flutter enthusiasts! Let's meet with developers from Nagpur eager to learn or share your knowledge on Flutter, meet people with brilliant skills and mindsets! We'll meet atleast once a month to share what we have been doing with each other, helping everyone progress 10x faster.",
+    "logo": "assets/Organizer_Logo/flutter_nagpur_logo.png",
+    "twitter_handle": "https://twitter.com/FlutterNagpur",
+    "facebook_handle": "",
+    "meetup_handle": "https://www.meetup.com/flutterngp",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Gwalior",
+    "small_description": "Flutter Gwalior is a group of enthusiastic Flutter developers who love creating beautiful apps with Flutter. We provide a platform for developers and enthusiasts either working within the Android ecosystem or interested in learning more about Android to collaborate and network among each other.",
+    "logo": "assets/Organizer_Logo/flutter_gwalior_logo.jpg",
+    "twitter_handle": "https://twitter.com/FlutterGWL",
+    "facebook_handle": "https://www.facebook.com/FlutterGWL",
+    "meetup_handle": "https://www.meetup.com/Gwalior-Flutter-Meetup-Group",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Pune",
+    "small_description": "Flutter Pune Development Meetup group is focused on the flutter mobile framework by Google.\nWe believe Flutter is going to change the way native mobile apps are developed. Come be a part of this journey with us.",
+    "logo": "assets/Organizer_Logo/flutter_pune_logo.png",
+    "twitter_handle": "https://twitter.com/flutterpune",
+    "facebook_handle": "",
+    "meetup_handle": "https://www.meetup.com/Gwalior-Flutter-Meetup-Group",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Bangalore",
+    "small_description": "This group is for mobile app developers who work with Google Flutter, who want to learn or are simply curious about it.",
+    "logo": "assets/Organizer_Logo/flutter_bangalore_logo.jpg",
+    "twitter_handle": "https://twitter.com/flutterblr",
+    "facebook_handle": "https://www.facebook.com/flutterbangalore",
+    "meetup_handle": "https://www.meetup.com/flutter-bangalore-group",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Hyderabad",
+    "small_description": "A place where developers can discuss the latest and best of Flutter.",
+    "logo": "",
+    "twitter_handle": "",
+    "facebook_handle": "",
+    "meetup_handle": "https://www.meetup.com/Flutter-Hyderabad",
+    "instagram_handle": ""
+  },
+  {
+    "organizer_name": "Flutter Surat",
+    "small_description": "We are a community of passionate developers interested in sharing our experiences in building mobile apps using Flutter.\nA place where developers can discuss the latest and best of Flutter.",
+    "logo": "assets/Organizer_Logo/flutter_surat_logo.jpg",
+    "twitter_handle": "https://twitter.com/fluttersurat",
+    "facebook_handle": "https://www.facebook.com/fluttersurat",
+    "meetup_handle": "https://www.meetup.com/FlutterSurat",
+    "instagram_handle": ""
+  }
+]
