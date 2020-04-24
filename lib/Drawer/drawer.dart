@@ -1,7 +1,7 @@
+import 'package:FlutterConIndia2020/OrganizerListScreen.dart';
+import 'package:FlutterConIndia2020/Sponsors.dart';
+import 'package:FlutterConIndia2020/utils/con_info.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttercon/OrganizerListScreen.dart';
-import 'package:fluttercon/Sponsors.dart';
-import 'package:fluttercon/utils/con_info.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 

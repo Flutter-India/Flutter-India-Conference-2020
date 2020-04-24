@@ -1,8 +1,8 @@
+import 'package:FlutterConIndia2020/HomePage/HomePage.dart';
+import 'package:FlutterConIndia2020/OrganizerListScreen.dart';
+import 'package:FlutterConIndia2020/Sponsors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fluttercon/HomePage/HomePage.dart';
-import 'package:fluttercon/OrganizerListScreen.dart';
-import 'package:fluttercon/Sponsors.dart';
 
 void main() async {
   runApp(

@@ -1,11 +1,12 @@
+import 'package:FlutterConIndia2020/Responsive.dart';
+import 'package:FlutterConIndia2020/utils/con_info.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttercon/Responsive.dart';
-import 'package:fluttercon/utils/con_info.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   static const String tag = '/HomePage';
   GlobalKey<FormState> _scaffoldkey = GlobalKey();
+  Color primaryColor = Color(0xFF1E40FF);
 
   @override
   Widget build(BuildContext context) {
@@ -66,10 +67,8 @@ class HomePage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 10.0,
-                      vertical: 7.0,
-                    ),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 7.0),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -88,7 +87,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 7.0),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -110,10 +110,8 @@ class HomePage extends StatelessWidget {
                     height: 10.0,
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 10.0,
-                      vertical: 7.0,
-                    ),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 7.0),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -124,8 +122,6 @@ class HomePage extends StatelessWidget {
                               ? 30.0
                               : 55.0,
                           color: Colors.black,
-//color: Colors.white,
-                          wordSpacing: 1.0,
                           fontWeight: FontWeight.w600,
                           fontFamily: 'assets/fonts/ProductSans.ttf',
                         ),
@@ -133,7 +129,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 7.0),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -180,7 +177,7 @@ class HomePage extends StatelessWidget {
             Stack(
               children: <Widget>[
                 Container(
-                  color: Color(0xFF1B36FF),
+                  color: primaryColor,
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * 0.8,
                   margin: EdgeInsets.only(top: 90.0),
@@ -201,7 +198,7 @@ class HomePage extends StatelessWidget {
                                       : 100.0,
                               vertical: 30.0,
                             ),
-                            color: Color(0xFF1B36FF),
+                            color: Colors.transparent,
                             onPressed: () async {
                               String url =
                                   'https://sessionize.com/FlutterConIN2020/';
@@ -213,7 +210,7 @@ class HomePage extends StatelessWidget {
                             },
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
-                              side: BorderSide(color: Colors.white, width: 7.0),
+                              side: BorderSide(color: Colors.white, width: 5.0),
                             ),
                             child: Text(
                               'Call for Speakers',
@@ -284,7 +281,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'Stay Tuned for More Info',
+                        'Stay tuned for more info!',
                         style: TextStyle(
                           color: Color(0xFF1B36FF),
                           fontSize: ResponsiveWidget.isSmallScreen(context)
@@ -304,16 +301,22 @@ class HomePage extends StatelessWidget {
                   ),
                 )),
             Container(
-              color: Color(0xFF1B36FF),
+              color: primaryColor,
               width: double.infinity,
-              height: MediaQuery.of(context).size.height * 0.6,
-              margin: EdgeInsets.only(top: 90.0),
+              height: ResponsiveWidget.isSmallScreen(context)
+                  ? MediaQuery.of(context).size.height * 0.5
+                  : MediaQuery.of(context).size.height * 0.9,
+              margin: EdgeInsets.only(
+                top: 90.0,
+              ),
               child: Column(
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(top: 35.0, bottom: 20),
+                  SizedBox(
+                    height: 35,
+                  ),
+                  Center(
                     child: Text(
-                      'Organized By',
+                      'Organized by',
                       style: TextStyle(
                         fontSize: ResponsiveWidget.isSmallScreen(context)
                             ? 35.0
@@ -323,24 +326,33 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://www.meetup.com/Mumbai-Flutter";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                  SizedBox(
+                    height: 35,
+                  ),
+                  Flexible(
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      //physics: NeverScrollableScrollPhysics(),
+//                mainAxisSpacing: 2.0,
+//                crossAxisSpacing: 2.0,
+                      childAspectRatio: ResponsiveWidget.isSmallScreen(context)
+                          ? 15 / 2
+                          : 15 / 2,
+                      shrinkWrap: true,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () async {
+                            String url =
+                                "https://www.meetup.com/Mumbai-Flutter";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
-                              'Flutter Mumbai Community',
+                              'Flutter Mumbai',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize:
@@ -351,16 +363,17 @@ class HomePage extends StatelessWidget {
                               textAlign: TextAlign.left,
                             ),
                           ),
-                          SizedBox(width: 10.0, height: 20.0),
-                          GestureDetector(
-                            onTap: () async {
-                              String url = "https://www.meetup.com/FlutterAHM";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url = "https://www.meetup.com/FlutterAHM";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Ahemdabad',
                               style: TextStyle(
@@ -373,24 +386,17 @@ class HomePage extends StatelessWidget {
                               textAlign: TextAlign.left,
                             ),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://twitter.com/fluttervadodara";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url = "https://twitter.com/fluttervadodara";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Vadodara',
                               style: TextStyle(
@@ -403,46 +409,18 @@ class HomePage extends StatelessWidget {
                               textAlign: TextAlign.left,
                             ),
                           ),
-                          SizedBox(width: 10.0, height: 10.0),
-                          GestureDetector(
-                            onTap: () async {
-                              String url = "https://www.meetup.com/flutterngp";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
-                            child: Text(
-                              'Flutter Nagpur',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 15.0
-                                        : 35.0,
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://www.meetup.com/Gwalior-Flutter-Meetup-Group";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url =
+                                "https://www.meetup.com/Gwalior-Flutter-Meetup-Group";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Gwalior',
                               style: TextStyle(
@@ -455,17 +433,18 @@ class HomePage extends StatelessWidget {
                               textAlign: TextAlign.left,
                             ),
                           ),
-                          SizedBox(width: 10.0, height: 10.0),
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://www.meetup.com/Gwalior-Flutter-Meetup-Group";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url =
+                                "https://www.meetup.com/Gwalior-Flutter-Meetup-Group";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Pune',
                               style: TextStyle(
@@ -478,24 +457,18 @@ class HomePage extends StatelessWidget {
                               textAlign: TextAlign.left,
                             ),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://www.meetup.com/Flutter-Hyderabad";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url =
+                                "https://www.meetup.com/Flutter-Hyderabad";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Hyderabad',
                               textAlign: TextAlign.left,
@@ -508,17 +481,17 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(width: 10.0, height: 10.0),
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://www.meetup.com/FlutterSurat";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url = "https://www.meetup.com/FlutterSurat";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Surat',
                               textAlign: TextAlign.left,
@@ -531,24 +504,41 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          GestureDetector(
-                            onTap: () async {
-                              String url =
-                                  "https://www.meetup.com/flutter-bangalore-group";
-                              if (await canLaunch(url)) {
-                                await launch(url);
-                              } else {
-                                throw 'Could not launch $url';
-                              }
-                            },
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url = "https://www.meetup.com/flutterngp";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
+                            child: Text(
+                              'Flutter Nagpur',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize:
+                                    ResponsiveWidget.isSmallScreen(context)
+                                        ? 15.0
+                                        : 35.0,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () async {
+                            String url =
+                                "https://www.meetup.com/flutter-bangalore-group";
+                            if (await canLaunch(url)) {
+                              await launch(url);
+                            } else {
+                              throw 'Could not launch $url';
+                            }
+                          },
+                          child: Center(
                             child: Text(
                               'Flutter Bangalore',
                               textAlign: TextAlign.left,
@@ -561,12 +551,12 @@ class HomePage extends StatelessWidget {
                               ),
                             ),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                    ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
                   ),
                 ],
               ),
@@ -577,131 +567,139 @@ class HomePage extends StatelessWidget {
                   color: Colors.white,
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height * 0.5,
-                  margin: EdgeInsets.only(top: 90.0),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 70),
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 125.0),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Text(
-                            'Contact us',
-                            style: TextStyle(
-                              fontSize: ResponsiveWidget.isSmallScreen(context)
-                                  ? 35.0
-                                  : 55.0,
-                              fontFamily: 'assets/fonts/ProductSans.ttf',
-                              color: Color(0xFF1B36FF),
-                            ),
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        SizedBox(
+                          height: 110.0,
+                        ),
+                        Text(
+                          'Contact us',
+                          style: TextStyle(
+                            fontSize: ResponsiveWidget.isSmallScreen(context)
+                                ? 35.0
+                                : 55.0,
+                            fontFamily: 'assets/fonts/ProductSans.ttf',
+                            color: Color(0xFF1B36FF),
                           ),
-                          SizedBox(
-                            height: 55.0,
+                        ),
+                        SizedBox(
+                          height: 55.0,
+                        ),
+                        Padding(
+                          padding:
+                              const EdgeInsets.only(top: 10.0, bottom: 20.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              GestureDetector(
+                                onTap: () async {
+                                  String url =
+                                      'https://twitter.com/IndiaFlutter';
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  } else {
+                                    throw 'Could not launch $url';
+                                  }
+                                },
+                                child: CircleAvatar(
+                                  radius:
+                                      ResponsiveWidget.isSmallScreen(context)
+                                          ? 20.0
+                                          : 55.0,
+                                  backgroundImage:
+                                      AssetImage('assets/twitter.png'),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 30.0,
+                              ),
+                              GestureDetector(
+                                onTap: () async {
+                                  String url =
+                                      'https://www.facebook.com/IndiaFlutter';
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  } else {
+                                    throw 'Could not launch $url';
+                                  }
+                                },
+                                child: CircleAvatar(
+                                  radius:
+                                      ResponsiveWidget.isSmallScreen(context)
+                                          ? 20.0
+                                          : 55.0,
+                                  backgroundImage:
+                                      AssetImage('assets/facebook.png'),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 30.0,
+                              ),
+                              GestureDetector(
+                                onTap: () async {
+                                  String url =
+                                      'https://www.youtube.com/channel/UCQ6LuIX6WBwIEOiVakjWM6w';
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  } else {
+                                    throw 'Could not launch $url';
+                                  }
+                                },
+                                child: CircleAvatar(
+                                  radius:
+                                      ResponsiveWidget.isSmallScreen(context)
+                                          ? 20.0
+                                          : 55.0,
+                                  backgroundImage:
+                                      AssetImage('assets/youtube.png'),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 10.0,
+                              ),
+                              GestureDetector(
+                                onTap: () async {
+                                  String url =
+                                      'https://fluttercommunityindia.slack.com/join/shared_invite/zt-ds4x0r8j-gjjnS~se5RLRy4suELR6xQ';
+                                  if (await canLaunch(url)) {
+                                    await launch(url);
+                                  } else {
+                                    throw 'Could not launch $url';
+                                  }
+                                },
+                                child: Container(
+                                  width: ResponsiveWidget.isSmallScreen(context)
+                                      ? 125.0
+                                      : 400.0,
+                                  child: Image.asset(
+                                    'assets/slack.png',
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(top: 10.0, bottom: 20.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                GestureDetector(
-                                  onTap: () async {
-                                    String url =
-                                        'https://twitter.com/IndiaFlutter';
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
-                                  },
-                                  child: CircleAvatar(
-                                    radius:
-                                        ResponsiveWidget.isSmallScreen(context)
-                                            ? 20.0
-                                            : 55.0,
-                                    backgroundImage:
-                                        AssetImage('assets/twitter.png'),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 30.0,
-                                ),
-                                GestureDetector(
-                                  onTap: () async {
-                                    String url =
-                                        'https://www.facebook.com/IndiaFlutter';
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
-                                  },
-                                  child: CircleAvatar(
-                                    radius:
-                                        ResponsiveWidget.isSmallScreen(context)
-                                            ? 20.0
-                                            : 55.0,
-                                    backgroundImage:
-                                        AssetImage('assets/facebook.png'),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 30.0,
-                                ),
-                                GestureDetector(
-                                  onTap: () async {
-                                    String url =
-                                        'https://www.youtube.com/channel/UCQ6LuIX6WBwIEOiVakjWM6w';
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
-                                  },
-                                  child: CircleAvatar(
-                                    radius:
-                                        ResponsiveWidget.isSmallScreen(context)
-                                            ? 20.0
-                                            : 55.0,
-                                    backgroundImage:
-                                        AssetImage('assets/youtube.png'),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 10.0,
-                                ),
-                                GestureDetector(
-                                  onTap: () async {
-                                    String url =
-                                        'https://fluttercommunityindia.slack.com/join/shared_invite/zt-ds4x0r8j-gjjnS~se5RLRy4suELR6xQ';
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
-                                  },
-                                  child: Container(
-                                    width:
-                                        ResponsiveWidget.isSmallScreen(context)
-                                            ? 150.0
-                                            : 400.0,
-                                    child: Image.asset(
-                                      'assets/slack.png',
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ],
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Text(
+                'Flutter and the related logo are trademarks of Google LLC. Flutter India is not affiliated with or otherwise sponsored by Google LLC.',
+                style: TextStyle(
+                  fontSize:
+                      ResponsiveWidget.isSmallScreen(context) ? 8.0 : 15.0,
+                ),
+              ),
+            ),
+            SizedBox(height: 10.0)
           ],
         ),
       ),
