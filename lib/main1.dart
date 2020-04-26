@@ -4,8 +4,6 @@ import 'package:FlutterConIndia2020/Sponsors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'new_homepage.dart';
-
 void main() async {
   runApp(
     MyApp(),
@@ -31,8 +29,8 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'assets/fonts/ProductSans.ttf',
                   fontSize: 35.0))),
       debugShowCheckedModeBanner: false,
-      home: NewHomePage(),
-//      initialRoute: HomePage.tag,
+//      home: NewHomePage(),
+      initialRoute: HomePage.tag,
       routes: {
         HomePage.tag: (context) => HomePage(),
         OrganizerListScreen.tag: (context) => OrganizerListScreen(),
