@@ -74,7 +74,13 @@ class HomePage extends StatelessWidget {
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.only(
-                        left: 30, right: 100.0, top: 7.0, bottom: 7.0),
+                      left: ResponsiveWidget.isSmallScreen(context)
+                          ? 30.0
+                          : 200.0,
+                      right: 100.0,
+                      top: 7.0,
+                      bottom: 7.0,
+                    ),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -94,12 +100,13 @@ class HomePage extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(
-                        left: ResponsiveWidget.isSmallScreen(context)
-                            ? 30.0
-                            : 30.0,
-                        right: 100.0,
-                        top: 7.0,
-                        bottom: 7.0),
+                      left: ResponsiveWidget.isSmallScreen(context)
+                          ? 30.0
+                          : 200.0,
+                      right: 100.0,
+                      top: 7.0,
+                      bottom: 7.0,
+                    ),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -122,12 +129,13 @@ class HomePage extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(
-                        left: ResponsiveWidget.isSmallScreen(context)
-                            ? 30.0
-                            : 30.0,
-                        right: 30.0,
-                        top: 7.0,
-                        bottom: 7.0),
+                      left: ResponsiveWidget.isSmallScreen(context)
+                          ? 30.0
+                          : 200.0,
+                      right: 100.0,
+                      top: 7.0,
+                      bottom: 7.0,
+                    ),
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
@@ -146,8 +154,9 @@ class HomePage extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(
-                      left:
-                          ResponsiveWidget.isSmallScreen(context) ? 30.0 : 30.0,
+                      left: ResponsiveWidget.isSmallScreen(context)
+                          ? 30.0
+                          : 200.0,
                       right: 100.0,
                       top: 7.0,
                       bottom: 7.0,
@@ -263,7 +272,7 @@ class HomePage extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.topLeft,
                       child: Text(
-                        'It’s not about source code. It’s about people! Want to meet the most recognizable Flutter developers from Europe and talk with them? This is the place! Flutter Europe is the easiest way to become a part of the greatest developers community ever.',
+                        'People! Want to meet the most recognizable Flutter developers and talk with them?\nThis is the place!\nFlutter India is the easiest way to talk with them.',
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                           color: Color(0xFF1B36FF),
