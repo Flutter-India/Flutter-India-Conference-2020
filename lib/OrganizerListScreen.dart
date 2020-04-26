@@ -45,7 +45,7 @@ class OrganizerListScreen extends StatelessWidget {
                       children: <Widget>[
                         CircleAvatar(
                           backgroundImage: AssetImage(new_Data[index]["logo"]),
-                          minRadius: 45.0,
+                          radius: 30.0,
                           backgroundColor: Color(0xFF1B36FF),
                         ),
                         SizedBox(
