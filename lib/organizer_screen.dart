@@ -48,7 +48,8 @@ class _OrganizerScreenState extends State<OrganizerScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         CircleAvatar(
-                          backgroundImage: CircleLogo(new_Data[index]["logo"]),
+                          backgroundImage:
+                              CircleLogo(new_Data[index]["logoUrl"]),
                           backgroundColor: Colors.black,
                         ),
                         SizedBox(
@@ -86,4 +87,11 @@ class _OrganizerScreenState extends State<OrganizerScreen> {
             children: widgets,
           );
   }
+}
+
+NetworkImage CircleLogo(String string) {
+  String defaultLogoUrl =
+      "https://miro.medium.com/max/1000/1*ilC2Aqp5sZd1wi0CopD1Hw.png";
+
+  return NetworkImage(string ?? defaultLogoUrl);
 }

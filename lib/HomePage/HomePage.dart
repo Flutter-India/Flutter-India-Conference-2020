@@ -897,9 +897,3 @@ class FAQSection extends StatelessWidget {
   }
 }
 
-AssetImage CircleLogo(String string) {
-  if (string.isEmpty) {
-    return AssetImage('assets/Organizer_Logo/flutter_surat_logo.jpg');
-  }
-  return AssetImage(string);
-}
