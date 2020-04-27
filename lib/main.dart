@@ -1,10 +1,6 @@
 import 'package:FlutterConIndia2020/HomePage/HomePage.dart';
-import 'package:FlutterConIndia2020/OrganizerListScreen.dart';
-import 'package:FlutterConIndia2020/Sponsors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'new_homepage.dart';
 
 void main() async {
   runApp(
@@ -31,12 +27,10 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'assets/fonts/ProductSans.ttf',
                   fontSize: 35.0))),
       debugShowCheckedModeBanner: false,
-      home: NewHomePage(),
+      home: HomePage(),
 //      initialRoute: HomePage.tag,
       routes: {
         HomePage.tag: (context) => HomePage(),
-        OrganizerListScreen.tag: (context) => OrganizerListScreen(),
-        SponsorScreen.tag: (context) => SponsorScreen(),
       },
     );
   }

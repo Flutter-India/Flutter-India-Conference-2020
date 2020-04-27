@@ -15,31 +15,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
-//drawer: MainScreenDrawer(),
       resizeToAvoidBottomPadding: true,
-//      appBar: AppBar(
-//        automaticallyImplyLeading: true,
-//
-//        iconTheme: IconThemeData(
-//          color: Color(0xFF1B36FF),
-//          size: 36.0,
-//        ),
-//
-//        //backgroundColor: Color(0xFF1B36FF),
-//        backgroundColor: Colors.white,
-//        elevation: 4.0,
-//        bottomOpacity: 0.0,
-//        actions: <Widget>[
-//          IconButton(
-//            onPressed: () => Share.share(
-//              "Download the new Flutter India Conference App and share with your friends.\nPlayStore link will be provided later",
-//            ),
-//            icon: Icon(
-//              Icons.share,
-//            ),
-//          ),
-//        ],
-//      ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -56,7 +32,9 @@ class HomePage extends StatelessWidget {
               ),
             ),
             SizedBox(
-              width: MediaQuery.of(context).size.width * 0.7,
+              width: ResponsiveWidget.isSmallScreen(context)
+                  ? MediaQuery.of(context).size.width
+                  : MediaQuery.of(context).size.width * 0.7,
               child: Column(
                 children: <Widget>[
                   Container(
@@ -66,262 +44,35 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              'What is Flutter Con India?',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 30.0
-                                        : 45.0,
-                                color: Colors.black,
-//color: Colors.white,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
-
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              Con_Info.descriptionText,
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                color: Color(0xFF1B36FF),
-//color: Colors.white70,
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 15.0
-                                        : 25.0,
-
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
+                        WhatisFlutterConIndia(),
+                        EventDesc(),
                         Padding(
                             padding: EdgeInsets.symmetric(horizontal: 64),
                             child: Divider()),
                         SizedBox(
                           height: 10.0,
                         ),
-
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              'When? ⏰️',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 30.0
-                                        : 45.0,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              Con_Info.eventtime,
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                color: Color(0xFF1B36FF),
-//color: Colors.white70,
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 15.0
-                                        : 25.0,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
+                        When(),
+                        EventTime(),
                         Padding(
                             padding: EdgeInsets.symmetric(horizontal: 64),
                             child: Divider()),
                         SizedBox(
                           height: 10.0,
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 30.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              'Our Goal 🥅',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 30.0
-                                        : 45.0,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              Con_Info.goal,
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                color: Color(0xFF1B36FF),
-//color: Colors.white70,
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 15.0
-                                        : 25.0,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
+                        GoalHead(),
+                        GoadAns(),
                         Padding(
                             padding: EdgeInsets.symmetric(horizontal: 64),
                             child: Divider()),
                         SizedBox(
                           height: 10.0,
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              'Flutter world 🌎 reunited',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 30.0
-                                        : 45.0,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                                wordSpacing: 0.2,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: ResponsiveWidget.isSmallScreen(context)
-                                ? 30.0
-                                : 200.0,
-                            right: 100.0,
-                            top: 7.0,
-                            bottom: 7.0,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: Text(
-                              'People! Want to meet the most recognizable Flutter developers and talk with them?\nThis is the place!\nFlutter India is the easiest way to talk with them.',
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                color: Color(0xFF1B36FF),
-//color: Colors.white70,
-                                fontSize:
-                                    ResponsiveWidget.isSmallScreen(context)
-                                        ? 15.0
-                                        : 25.0,
-                                fontFamily: 'assets/fonts/ProductSans.ttf',
-                              ),
-                            ),
-                          ),
-                        ),
-
+                        FlutterWorldUnited(),
+                        WorldReunitedQuote(),
                         SizedBox(
                           height: 10.0,
                         ),
-//                  ButtonTheme(
-//                    child: RaisedButton(
-//                      padding: EdgeInsets.all(10.0),
-//                      color: Colors.red,
-//                      onPressed: () {},
-//                      child: Text(
-//                        'Watch Live',
-//                        style: TextStyle(
-//                          color: Colors.white,
-//                          fontFamily: 'assets/fonts/ProductSans.ttf',
-//                          fontSize: ResponsiveWidget.isSmallScreen(context)
-//                              ? 15.0
-//                              : 35.0,
-//                        ),
-//                      ),
-//                      shape: RoundedRectangleBorder(
-//                        borderRadius: BorderRadius.circular(20.0),
-//                        side: BorderSide(color: primaryColor, width: 5.0),
-//                      ),
-//                    ),
-//                  ),
                       ],
                     ),
                   ),
@@ -341,7 +92,10 @@ class HomePage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisSize: MainAxisSize.min,
                               children: <Widget>[
-                                Center(
+                                Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 30.0,
+                                  ),
                                   child: RichText(
                                     text: TextSpan(
                                       text: 'Want to be a ',
@@ -390,17 +144,19 @@ class HomePage extends StatelessWidget {
                                 Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 20),
                                   child: RaisedButton(
-                                    elevation: 10.0,
+                                    elevation: 6.0,
                                     splashColor: Colors.red,
-                                    hoverColor: Colors.greenAccent,
-                                    hoverElevation: 10.0,
+                                    hoverElevation: 50.0,
                                     padding: EdgeInsets.symmetric(
                                       horizontal:
                                           ResponsiveWidget.isSmallScreen(
                                                   context)
-                                              ? 50.0
+                                              ? 20.0
                                               : 100.0,
-                                      vertical: 30.0,
+                                      vertical: ResponsiveWidget.isSmallScreen(
+                                              context)
+                                          ? 10.0
+                                          : 30.0,
                                     ),
                                     color: primaryColor,
                                     onPressed: () async {
@@ -415,9 +171,9 @@ class HomePage extends StatelessWidget {
                                       }
                                     },
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20.0),
+                                      borderRadius: BorderRadius.circular(15.0),
                                       side: BorderSide(
-                                          color: Colors.white, width: 5.0),
+                                          color: Colors.white, width: 2.0),
                                     ),
                                     child: Text(
                                       'Call for Speakers',
@@ -425,19 +181,20 @@ class HomePage extends StatelessWidget {
                                         fontSize:
                                             ResponsiveWidget.isSmallScreen(
                                                     context)
-                                                ? 25.0
+                                                ? 15.0
                                                 : 45.0,
                                         color: Colors.white,
                                         fontFamily:
                                             'assets/fonts/ProductSans.ttf',
                                       ),
+                                      textAlign: TextAlign.center,
                                     ),
                                   ),
                                 ),
                                 SizedBox(
                                   height:
                                       ResponsiveWidget.isSmallScreen(context)
-                                          ? 80
+                                          ? 30
                                           : 60.0,
                                 ),
                                 Padding(
@@ -448,7 +205,7 @@ class HomePage extends StatelessWidget {
                                     style: TextStyle(
                                       fontSize: ResponsiveWidget.isSmallScreen(
                                               context)
-                                          ? 25.0
+                                          ? 15.0
                                           : 35.0,
                                       color: Colors.white,
                                       fontFamily:
@@ -472,7 +229,7 @@ class HomePage extends StatelessWidget {
                                         fontSize:
                                             ResponsiveWidget.isSmallScreen(
                                                     context)
-                                                ? 25.0
+                                                ? 15.0
                                                 : 35.0,
                                         color: Colors.white,
                                         fontFamily:
@@ -491,7 +248,9 @@ class HomePage extends StatelessWidget {
                             child: Image.asset(
                               'assets/speaker.png',
                               height: double.infinity,
-                              fit: BoxFit.fitHeight,
+                              fit: ResponsiveWidget.isSmallScreen(context)
+                                  ? BoxFit.cover
+                                  : BoxFit.fitHeight,
                             ),
                           )
                         ],
@@ -501,7 +260,7 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     height: ResponsiveWidget.isSmallScreen(context)
-                        ? MediaQuery.of(context).size.height * 0.8
+                        ? MediaQuery.of(context).size.height * 1
                         : MediaQuery.of(context).size.height * 1,
                     color: Colors.white,
                     child: FAQSection(),
@@ -681,6 +440,253 @@ class HomePage extends StatelessWidget {
               ),
             )
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class WorldReunitedQuote extends StatelessWidget {
+  const WorldReunitedQuote({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'People! Want to meet the most recognizable Flutter developers and talk with them?\nThis is the place!\nFlutter India is the easiest way to talk with them.',
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            color: Color(0xFF1B36FF),
+//color: Colors.white70,
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class FlutterWorldUnited extends StatelessWidget {
+  const FlutterWorldUnited({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'Flutter world 🌎 reunited',
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
+            color: Colors.black,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+            wordSpacing: 0.2,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class GoadAns extends StatelessWidget {
+  const GoadAns({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          Con_Info.goal,
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            color: Color(0xFF1B36FF),
+//color: Colors.white70,
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class GoalHead extends StatelessWidget {
+  const GoalHead({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 30.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'Our Goal 🥅',
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
+            color: Colors.black,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class EventTime extends StatelessWidget {
+  const EventTime({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          Con_Info.eventtime,
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            color: Color(0xFF1B36FF),
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class When extends StatelessWidget {
+  const When({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'When? ⏰️',
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
+            color: Colors.black,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class EventDesc extends StatelessWidget {
+  const EventDesc({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          Con_Info.descriptionText,
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            color: Color(0xFF1B36FF),
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class WhatisFlutterConIndia extends StatelessWidget {
+  const WhatisFlutterConIndia({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.only(
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
+        right: 100.0,
+        top: 7.0,
+        bottom: 7.0,
+      ),
+      child: Align(
+        alignment: Alignment.topLeft,
+        child: Text(
+          'What is Flutter Con India?',
+          textAlign: TextAlign.justify,
+          style: TextStyle(
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
+            color: Colors.black,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
+          ),
         ),
       ),
     );
