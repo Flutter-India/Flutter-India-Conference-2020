@@ -1,6 +1,5 @@
 import 'package:FlutterConIndia2020/HomePage/HomePage.dart';
 import 'package:FlutterConIndia2020/OrganizerListScreen.dart';
-import 'package:FlutterConIndia2020/Sponsors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -34,7 +33,6 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.tag: (context) => HomePage(),
         OrganizerListScreen.tag: (context) => OrganizerListScreen(),
-        SponsorScreen.tag: (context) => SponsorScreen(),
       },
     );
   }

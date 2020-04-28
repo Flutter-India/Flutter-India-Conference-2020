@@ -1,21 +1,28 @@
+import 'package:FlutterConIndia2020/HomePage/QNA.dart';
 import 'package:FlutterConIndia2020/Responsive.dart';
-import 'package:FlutterConIndia2020/utils/con_info.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../WorldReunite.dart';
 import '../organizer_screen.dart';
+import '../widget.dart';
+import 'FAQ.dart';
 
 class HomePage extends StatelessWidget {
   static const String tag = '/HomePage';
   GlobalKey<FormState> _scaffoldkey = GlobalKey();
-  Color primaryColor = Color(0xFF1E40FF);
+  Color primaryColor = Colors.black;
+
   String data;
+  String primaryFont = 'assets/fonts/ProductSans.ttf';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
       resizeToAvoidBottomPadding: true,
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -25,10 +32,33 @@ class HomePage extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.75,
-              child: Image.asset(
-                'assets/Twitter_Cover.png',
-                filterQuality: FilterQuality.high,
-                fit: BoxFit.cover,
+              color: primaryColor,
+              child: Align(
+                alignment: Alignment.center,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Expanded(child: Image.asset('assets/Vector.png')),
+                    Expanded(
+                      child: Container(
+                        child: ScaleAnimatedTextKit(
+                            onTap: () {},
+                            text: [
+                              "Flutter",
+                              "\nCon",
+                              "India",
+                              "\n2020",
+                            ],
+                            textStyle: TextStyle(
+                              fontSize: 250.0,
+                              color: Colors.white,
+                              fontFamily: primaryFont,
+                            ),
+                            alignment: AlignmentDirectional.topStart),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             SizedBox(
@@ -106,8 +136,7 @@ class HomePage extends StatelessWidget {
                                                 ? 25.0
                                                 : 45.0,
                                         color: Colors.white,
-                                        fontFamily:
-                                            'assets/fonts/ProductSans.ttf',
+                                        fontFamily: primaryFont,
                                       ),
                                       children: <TextSpan>[
                                         TextSpan(
@@ -444,462 +473,4 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-}
-
-class WorldReunitedQuote extends StatelessWidget {
-  const WorldReunitedQuote({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          'People! Want to meet the most recognizable Flutter developers and talk with them?\nThis is the place!\nFlutter India is the easiest way to talk with them.',
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            color: Color(0xFF1B36FF),
-//color: Colors.white70,
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class FlutterWorldUnited extends StatelessWidget {
-  const FlutterWorldUnited({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          'Flutter world 🌎 reunited',
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w600,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-            wordSpacing: 0.2,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class GoadAns extends StatelessWidget {
-  const GoadAns({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          Con_Info.goal,
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            color: Color(0xFF1B36FF),
-//color: Colors.white70,
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class GoalHead extends StatelessWidget {
-  const GoalHead({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 30.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          'Our Goal 🥅',
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w600,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class EventTime extends StatelessWidget {
-  const EventTime({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          Con_Info.eventtime,
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            color: Color(0xFF1B36FF),
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class When extends StatelessWidget {
-  const When({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          'When? ⏰️',
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w600,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class EventDesc extends StatelessWidget {
-  const EventDesc({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          Con_Info.descriptionText,
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            color: Color(0xFF1B36FF),
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class WhatisFlutterConIndia extends StatelessWidget {
-  const WhatisFlutterConIndia({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
-        right: 100.0,
-        top: 7.0,
-        bottom: 7.0,
-      ),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          'What is Flutter Con India?',
-          textAlign: TextAlign.justify,
-          style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
-            color: Colors.black,
-            fontWeight: FontWeight.w600,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class OrganizerMeetup extends StatelessWidget {
-  OrganizerMeetup({
-    Key key,
-    @required this.string,
-  }) : super(key: key);
-
-  final String string;
-
-  @override
-  Widget build(BuildContext context) {
-    if (string.isEmpty) {
-      return Container(
-        width: 0.0,
-        height: 0.0,
-      );
-    }
-    return GestureDetector(
-      onTap: () async {
-        String url = string;
-        if (await canLaunch(url)) {
-          await launch(url);
-        } else {
-          throw 'Could not launch $url';
-        }
-      },
-      child: CircleAvatar(
-        radius: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 20.0,
-        backgroundImage: AssetImage('assets/meetup.png'),
-      ),
-    );
-  }
-}
-
-class OrganizerTwitter extends StatelessWidget {
-  final String string;
-
-  const OrganizerTwitter({
-    Key key,
-    @required this.string,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    if (string.isEmpty) {
-      return Container(
-        width: 0.0,
-        height: 0.0,
-      );
-    }
-    return GestureDetector(
-      onTap: () async {
-        String url = string;
-        if (await canLaunch(url)) {
-          await launch(url);
-        } else {
-          throw 'Could not launch $url';
-        }
-      },
-      child: CircleAvatar(
-        radius: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 20.0,
-        backgroundImage: AssetImage('assets/twitter.png'),
-      ),
-    );
-  }
-}
-
-class FAQSection extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 7.0),
-          child: Align(
-            alignment: Alignment.topLeft,
-            child: Text(
-              'Frequently Asked Question',
-              textAlign: TextAlign.justify,
-              style: TextStyle(
-                fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 55.0,
-                color: Colors.black,
-//color: Colors.white,
-                fontWeight: FontWeight.w600,
-                fontFamily: 'assets/fonts/ProductSans.ttf',
-              ),
-            ),
-          ),
-        ),
-        SizedBox(
-          height: 20.0,
-        ),
-        buildQuestion(
-          context,
-          'How can i propose the talk?',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildAnswer(
-          context,
-          'You can fill the form by clicking Call for Speakers',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildQuestion(
-          context,
-          'Where will the sessions be broadcast?',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildAnswer(
-          context,
-          'The videos will be streamed live on our dedicated Youtube channel.',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildQuestion(
-          context,
-          'Will presentations be available after each event?',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildAnswer(
-          context,
-          'A few days after each talk, we will post them on a dedicated YouTube playlist.',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildQuestion(
-          context,
-          'Will the conference be fully in English?',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildAnswer(
-          context,
-          'Yes, the official language is English.',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildQuestion(
-          context,
-          'What do I need to bring with me?',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-        buildAnswer(
-          context,
-          'You don`t need anything extra to fully attend the event. Although we recommend charging your phone. ;)',
-        ),
-        SizedBox(
-          height: 15.0,
-        ),
-      ],
-    );
-  }
-
-  Container buildAnswer(BuildContext context, @required String answer) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 7.0),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          answer,
-          style: TextStyle(
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 20.0,
-          ),
-        ),
-      ),
-      color: Colors.white,
-    );
-  }
-
-  Container buildQuestion(BuildContext context, @required String question) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 7.0),
-      child: Align(
-        alignment: Alignment.topLeft,
-        child: Text(
-          question,
-          style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
-            fontFamily: 'assets/fonts/ProductSans.ttf',
-          ),
-        ),
-      ),
-      decoration: BoxDecoration(
-        color: Colors.black12,
-        borderRadius: BorderRadius.circular(10.0),
-      ),
-      margin: EdgeInsets.fromLTRB(30, 0, 30, 0),
-    );
-  }
-}
-
-AssetImage CircleLogo(String string) {
-  if (string.isEmpty) {
-    return AssetImage('assets/Organizer_Logo/flutter_surat_logo.jpg');
-  }
-  return AssetImage(string);
 }

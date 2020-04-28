@@ -5,7 +5,8 @@ import 'package:FlutterConIndia2020/utils/con_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'HomePage/HomePage.dart';
+import 'HomePage/FAQ.dart';
+import 'HomePage/OrganizerHandle.dart';
 
 class OrganizerScreen extends StatefulWidget {
   @override
@@ -67,7 +68,6 @@ class _OrganizerScreenState extends State<OrganizerScreen> {
                   ],
                 ),
               ));
-//      await Future.delayed(Duration(seconds: 5));
 
       setState(() {});
     });
