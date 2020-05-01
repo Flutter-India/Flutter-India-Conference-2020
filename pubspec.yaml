@@ -23,17 +23,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
-  flutter_svg: ^0.17.4
   font_awesome_flutter: ^8.8.1
   url_launcher: ^5.4.5
   share: ^0.6.4
-  animated_text_kit: ^2.0.0
-  drawing_animation: ^0.1.1
-  google_fonts: ^1.0.0
+  hover_effect: ^0.6.0
+  motion_widget: ^1.0.2
+  firebase_core: ^0.4.4+3
+  firebase_storage: ^3.1.5
+  firebase: ^7.3.0
+  cached_network_image: ^2.1.0+1
+
+
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +64,7 @@ flutter:
     - assets/Images/extra/
     - assets/Images/Logos/
     - assets/Images/socialIcons/
+    - assets/Images/socialIcons/youtube_social_circle_red.png
     - assets/Images/Logos/FlutterConLogos/
     - assets/Images/Logos/Organizer_Logo/
     - assets/Images/Logos/Sponsors_Logo/
@@ -81,6 +88,9 @@ flutter:
     - family: Product Sans
       fonts:
         - asset: assets/fonts/ProductSans.ttf
+    - family: Rocky Billy
+      fonts:
+        - asset: assets/fonts/rockybilly.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

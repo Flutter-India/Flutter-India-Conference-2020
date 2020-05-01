@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../Responsive.dart';
-
-export '../Responsive.dart';
+import '../Responsiveness/Responsive.dart';
 
 class QNA {
-  static Container buildAnswer(BuildContext context, @required String answer) {
+  static Container buildAnswer(BuildContext context, String answer) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 7.0),
       child: Align(
@@ -22,8 +20,7 @@ class QNA {
     );
   }
 
-  static Container buildQuestion(
-      BuildContext context, @required String question) {
+  static Container buildQuestion(BuildContext context, String question) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 7.0),
       child: Align(

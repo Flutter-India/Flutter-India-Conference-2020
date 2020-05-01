@@ -1,7 +1,8 @@
-import 'package:FlutterConIndia2020/HomePage/HomePage.dart';
-import 'package:FlutterConIndia2020/HomePage/HomePage2.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'HomePage/HomePage.dart';
 
 void main() async {
   runApp(
@@ -34,7 +35,6 @@ class MyApp extends StatelessWidget {
       home: HomePageNew(),
 //      initialRoute: HomePage.tag,
       routes: {
-        HomePage.tag: (context) => HomePage(),
         HomePageNew.tag: (context) => HomePageNew(),
       },
     );

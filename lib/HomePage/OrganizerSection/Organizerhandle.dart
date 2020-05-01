@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../Responsive.dart';
+import '../Responsiveness/Responsive.dart';
 
 class OrganizerMeetup extends StatelessWidget {
   OrganizerMeetup({
@@ -29,8 +29,8 @@ class OrganizerMeetup extends StatelessWidget {
         }
       },
       child: CircleAvatar(
-        radius: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 20.0,
-        backgroundImage: AssetImage('assets/meetup.png'),
+        radius: ResponsiveWidget.isSmallScreen(context) ? 20.0 : 30.0,
+        backgroundImage: AssetImage('assets/Images/socialIcons/meetup.png'),
       ),
     );
   }
@@ -62,8 +62,8 @@ class OrganizerTwitter extends StatelessWidget {
         }
       },
       child: CircleAvatar(
-        radius: ResponsiveWidget.isSmallScreen(context) ? 10.0 : 20.0,
-        backgroundImage: AssetImage('assets/twitter.png'),
+        radius: ResponsiveWidget.isSmallScreen(context) ? 20.0 : 30.0,
+        backgroundImage: AssetImage('assets/Images/socialIcons/twitter.png'),
       ),
     );
   }

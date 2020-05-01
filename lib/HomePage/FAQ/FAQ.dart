@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../Responsiveness/Responsive.dart';
 import 'QNA.dart';
 
 class FAQSection extends StatelessWidget {
@@ -102,9 +103,9 @@ class FAQSection extends StatelessWidget {
   }
 }
 
-AssetImage CircleLogo(String string) {
+circleLogo(String string) {
   if (string.isEmpty) {
     return AssetImage('assets/Organizer_Logo/flutter_surat_logo.jpg');
   }
-  return AssetImage(string);
+  return NetworkImage(string);
 }

@@ -1,13 +1,11 @@
-import 'package:FlutterConIndia2020/utils/con_info.dart';
 import 'package:flutter/material.dart';
+import 'package:FlutterConIndia2020/utils/con_Info.dart';
 
-import 'Responsive.dart';
+import '../HomePage/Responsiveness/Responsive.dart';
 
 class FlutterWorldUnited extends StatelessWidget {
-  const FlutterWorldUnited({
-    Key key,
-  }) : super(key: key);
-
+  FlutterWorldUnited({Key key, this.color}) : super(key: key);
+  Color color;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -20,11 +18,11 @@ class FlutterWorldUnited extends StatelessWidget {
       child: Align(
         alignment: Alignment.topLeft,
         child: Text(
-          'Flutter world 🌎 reunited',
+          'Flutter world reunited 🌎',
           textAlign: TextAlign.justify,
           style: TextStyle(
             fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
-            color: Colors.black,
+            color: color,
             fontWeight: FontWeight.w600,
             fontFamily: 'assets/fonts/ProductSans.ttf',
             wordSpacing: 0.2,
@@ -36,10 +34,11 @@ class FlutterWorldUnited extends StatelessWidget {
 }
 
 class GoadAns extends StatelessWidget {
-  const GoadAns({
+  GoadAns({
     Key key,
+    this.color,
   }) : super(key: key);
-
+  Color color;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -55,7 +54,7 @@ class GoadAns extends StatelessWidget {
           Con_Info.goal,
           textAlign: TextAlign.justify,
           style: TextStyle(
-            color: Color(0xFF1B36FF),
+            color: color,
 //color: Colors.white70,
             fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
             fontFamily: 'assets/fonts/ProductSans.ttf',
@@ -69,8 +68,9 @@ class GoadAns extends StatelessWidget {
 class GoalHead extends StatelessWidget {
   GoalHead({
     Key key,
+    this.color,
   }) : super(key: key);
-
+  Color color;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -83,11 +83,11 @@ class GoalHead extends StatelessWidget {
       child: Align(
         alignment: Alignment.topLeft,
         child: Text(
-          'Our Goal 🥅',
+          'Our Goal 🎯',
           textAlign: TextAlign.justify,
           style: TextStyle(
             fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
-            color: Colors.black,
+            color: color,
             fontWeight: FontWeight.w600,
             fontFamily: 'assets/fonts/ProductSans.ttf',
           ),
@@ -101,26 +101,13 @@ class EventTime extends StatelessWidget {
   EventTime({
     Key key,
     this.color,
-    this.fonts,
-    this.paddingMobileSize,
-    this.paddingDesktopSize,
-    this.textMobileSize,
-    this.textDesktopSize,
   }) : super(key: key);
-  final Color color;
-  final String fonts;
-  double paddingMobileSize = 30.0;
-  double textMobileSize = 15.0;
-  double paddingDesktopSize = 200.0;
-  double textDesktopSize = 25.0;
-
+  Color color;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context)
-            ? paddingMobileSize
-            : paddingDesktopSize,
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
         right: 100.0,
         top: 7.0,
         bottom: 7.0,
@@ -131,10 +118,8 @@ class EventTime extends StatelessWidget {
           Con_Info.eventtime,
           textAlign: TextAlign.justify,
           style: TextStyle(
-            color: Color(0xFF1B36FF),
-            fontSize: ResponsiveWidget.isSmallScreen(context)
-                ? textMobileSize
-                : textDesktopSize,
+            color: color,
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
             fontFamily: 'assets/fonts/ProductSans.ttf',
           ),
         ),
@@ -144,29 +129,13 @@ class EventTime extends StatelessWidget {
 }
 
 class When extends StatelessWidget {
-  When({
-    Key key,
-    this.color,
-    this.fonts,
-    this.paddingMobileSize,
-    this.paddingDesktopSize,
-    this.textMobileSize,
-    this.textDesktopSize,
-  }) : super(key: key);
-  final Color color;
-  final String fonts;
-  double paddingMobileSize = 30.0;
-  double textMobileSize = 35.0;
-  double paddingDesktopSize = 200.0;
-  double textDesktopSize = 45.0;
-
+  When({Key key, this.color}) : super(key: key);
+  Color color;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context)
-            ? paddingMobileSize
-            : paddingDesktopSize,
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
         right: 100.0,
         top: 7.0,
         bottom: 7.0,
@@ -177,10 +146,8 @@ class When extends StatelessWidget {
           'When? ⏰️',
           textAlign: TextAlign.justify,
           style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context)
-                ? textMobileSize
-                : textDesktopSize,
-            color: Colors.black,
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 35.0 : 45.0,
+            color: color,
             fontWeight: FontWeight.w600,
             fontFamily: 'assets/fonts/ProductSans.ttf',
           ),
@@ -193,27 +160,13 @@ class When extends StatelessWidget {
 class EventDesc extends StatelessWidget {
   EventDesc({
     Key key,
-    this.color,
-    this.fonts,
-    this.paddingMobileSize,
-    this.paddingDesktopSize,
-    this.textMobileSize,
-    this.textDesktopSize,
   }) : super(key: key);
-  final Color color;
-  final String fonts;
-  double paddingMobileSize = 30.0;
-  double textMobileSize = 15.0;
-  double paddingDesktopSize = 200.0;
-  double textDesktopSize = 15.0;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context)
-            ? paddingMobileSize
-            : paddingDesktopSize,
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
         right: 100.0,
         top: 7.0,
         bottom: 7.0,
@@ -224,11 +177,9 @@ class EventDesc extends StatelessWidget {
           Con_Info.descriptionText,
           textAlign: TextAlign.justify,
           style: TextStyle(
-            color: color,
-            fontSize: ResponsiveWidget.isSmallScreen(context)
-                ? textMobileSize
-                : textDesktopSize,
-            fontFamily: fonts,
+            color: Colors.white,
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 15.0 : 25.0,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
           ),
         ),
       ),
@@ -239,28 +190,13 @@ class EventDesc extends StatelessWidget {
 class WhatisFlutterConIndia extends StatelessWidget {
   WhatisFlutterConIndia({
     Key key,
-    this.color,
-    this.fonts,
-    this.paddingMobileSize,
-    this.paddingDesktopSize,
-    this.textMobileSize,
-    this.textDesktopSize,
   }) : super(key: key);
-
-  final Color color;
-  String fonts = 'assets/fonts/ProductSans.ttf';
-  double paddingMobileSize = 30.0;
-  double textMobileSize = 30.0;
-  double paddingDesktopSize = 200.0;
-  double textDesktopSize = 45.0;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: ResponsiveWidget.isSmallScreen(context)
-            ? paddingMobileSize
-            : paddingDesktopSize,
+        left: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 200.0,
         right: 100.0,
         top: 7.0,
         bottom: 7.0,
@@ -268,15 +204,13 @@ class WhatisFlutterConIndia extends StatelessWidget {
       child: Align(
         alignment: Alignment.topLeft,
         child: Text(
-          'What is Flutter Con India?',
+          'What is FlutterCon India?',
           textAlign: TextAlign.justify,
           style: TextStyle(
-            fontSize: ResponsiveWidget.isSmallScreen(context)
-                ? textMobileSize
-                : textDesktopSize,
-            color: color,
+            fontSize: ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
-            fontFamily: fonts,
+            fontFamily: 'assets/fonts/ProductSans.ttf',
           ),
         ),
       ),
