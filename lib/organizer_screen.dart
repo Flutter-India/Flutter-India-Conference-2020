@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:FlutterConIndia2020/Responsive.dart';
 import 'package:FlutterConIndia2020/utils/con_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'HomePage/HomePage.dart';
+import 'HomePage/OrganizerSection/Organizerhandle.dart';
+import 'HomePage/Responsiveness/Responsive.dart';
 
 class OrganizerScreen extends StatefulWidget {
   @override
