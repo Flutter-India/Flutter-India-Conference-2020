@@ -2,8 +2,7 @@
   {
     "organizer_name": "Flutter Mumbai",
     "small_description": "Flutter Mumbai Community is all about learning and sharing knowledge about flutter and its related technologies.\nIf you are from a different background, you can join if you are enthusiastic about learning & sharing with fellow developers from Mumbai.",
-    "logo": "assets/Organizer_Logo/flutter_mumbai_logo.jpg",
-    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_mumbai_logo.jpg?alt=media&token=09ab7eda-c732-4319-bf6f-5c0ba7089112",
+    "logo": "https://pbs.twimg.com/profile_images/1247898189157392393/w8lhWOiy_400x400.jpg",
     "twitter_handle": "https://twitter.com/MumbaiFlutter",
     "facebook_handle": "https://www.facebook.com/fluttermumbai",
     "meetup_handle": "https://www.meetup.com/Mumbai-Flutter",
@@ -12,8 +11,7 @@
   {
     "organizer_name": "Flutter Ahemdabad",
     "small_description": "Software Development has been divided for long. Flutter lets us build beautiful Mobile, Web and Desktop applications in record time. Whether you are just starting a new Flutter project, or an experienced dev looking to discuss advanced topics, this is where you belong!",
-    "logo": "assets/Organizer_Logo/flutter_ahm_logo.png",
-    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_ahm_logo.png?alt=media&token=13210a4e-ffc9-46be-b702-7236938a5767",
+    "logo": "https://pbs.twimg.com/profile_images/1114166773081751553/stpi_ORK_400x400.png",
     "twitter_handle": "https://twitter.com/flutterahm",
     "facebook_handle": "",
     "meetup_handle": "https://www.meetup.com/FlutterAHM",
@@ -22,9 +20,8 @@
   {
     "organizer_name": "Flutter Vadodara",
     "small_description": "",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_vadodara_logo.jpg?alt=media&token=36a600bf-b0b3-4330-82ab-4a1352d4a76d",
+    "logo": "https://pbs.twimg.com/profile_images/1161536509910106112/HxxZMlRw_400x400.jpg",
     "twitter_handle": "https://twitter.com/fluttervadodara",
-    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_vadodara_logo.jpg?alt=media&token=36a600bf-b0b3-4330-82ab-4a1352d4a76d",
     "facebook_handle": "",
     "meetup_handle": "",
     "instagram_handle": ""
@@ -32,7 +29,7 @@
   {
     "organizer_name": "Flutter Nagpur",
     "small_description": "Calling all Flutter enthusiasts! Let's meet with developers from Nagpur eager to learn or share your knowledge on Flutter, meet people with brilliant skills and mindsets! We'll meet atleast once a month to share what we have been doing with each other, helping everyone progress 10x faster.",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_nagpur_logo.png?alt=media&token=ffb67827-aac5-4833-933b-cd0efaec5614",
+    "logo": "https://pbs.twimg.com/profile_images/1194299541555531776/oOdXL79I_400x400.png",
     "twitter_handle": "https://twitter.com/FlutterNagpur",
     "facebook_handle": "",
     "meetup_handle": "https://www.meetup.com/flutterngp",
@@ -41,7 +38,7 @@
   {
     "organizer_name": "Flutter Gwalior",
     "small_description": "Flutter Gwalior is a group of enthusiastic Flutter developers who love creating beautiful apps with Flutter. We provide a platform for developers and enthusiasts either working within the Android ecosystem or interested in learning more about Android to collaborate and network among each other.",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_gwalior_logo.jpg?alt=media&token=1c9ba050-1e3b-4596-82e3-d7cad97ddbee",
+    "logo": "https://pbs.twimg.com/profile_images/1199339298513809416/IaibpwR-_400x400.jpg",
     "twitter_handle": "https://twitter.com/FlutterGWL",
     "facebook_handle": "https://www.facebook.com/FlutterGWL",
     "meetup_handle": "https://www.meetup.com/Gwalior-Flutter-Meetup-Group",
@@ -50,16 +47,16 @@
   {
     "organizer_name": "Flutter Pune",
     "small_description": "Flutter Pune Development Meetup group is focused on the flutter mobile framework by Google.\nWe believe Flutter is going to change the way native mobile apps are developed. Come be a part of this journey with us.",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_pune_logo.png?alt=media&token=8de1c80e-dfc7-4c0c-9529-2fdd65e680ee",
+    "logo": "https://pbs.twimg.com/profile_images/1134686935056769025/dkPN78qX_400x400.png",
     "twitter_handle": "https://twitter.com/flutterpune",
     "facebook_handle": "",
-    "meetup_handle": "https://www.meetup.com/Gwalior-Flutter-Meetup-Group",
+    "meetup_handle": "https://www.meetup.com/Flutter-Pune-Development-Meetup/",
     "instagram_handle": ""
   },
   {
     "organizer_name": "Flutter Bangalore",
     "small_description": "This group is for mobile app developers who work with Google Flutter, who want to learn or are simply curious about it.",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_bangalore_logo.jpg?alt=media&token=053a9bb6-f127-4336-ab1c-dd2b01b53929",
+    "logo": "https://pbs.twimg.com/profile_images/1015275215444742144/jV2vHT7M_400x400.jpg",
     "twitter_handle": "https://twitter.com/flutterblr",
     "facebook_handle": "https://www.facebook.com/flutterbangalore",
     "meetup_handle": "https://www.meetup.com/flutter-bangalore-group",
@@ -68,7 +65,7 @@
   {
     "organizer_name": "Flutter Hyderabad",
     "small_description": "A place where developers can discuss the latest and best of Flutter.",
-    "logo": "",
+    "logo": "https://pbs.twimg.com/profile_images/1138681198081761280/ZCnOMyFx_400x400.jpg",
     "twitter_handle": "",
     "facebook_handle": "",
     "meetup_handle": "https://www.meetup.com/Flutter-Hyderabad",
@@ -77,7 +74,7 @@
   {
     "organizer_name": "Flutter Surat",
     "small_description": "We are a community of passionate developers interested in sharing our experiences in building mobile apps using Flutter.\nA place where developers can discuss the latest and best of Flutter.",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/flutterconindia-da2ca.appspot.com/o/flutter_surat_logo.jpg?alt=media&token=0d058696-856d-4874-a16b-e27895704f96",
+    "logo": "https://pbs.twimg.com/profile_images/1138681198081761280/ZCnOMyFx_400x400.jpg",
     "twitter_handle": "https://twitter.com/fluttersurat",
     "facebook_handle": "https://www.facebook.com/fluttersurat",
     "meetup_handle": "https://www.meetup.com/FlutterSurat",

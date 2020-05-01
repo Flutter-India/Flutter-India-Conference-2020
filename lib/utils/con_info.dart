@@ -9,8 +9,9 @@ class Con_Info {
   static const String goal =
       'Our goal is to share Flutter knowledge, improve Flutter skills, and expand the Flutter community.';
   static const String eventtime =
-      'The week of Friday May 1 to , Sunday May 3 at  19:00 hr (IST) two Flutter talks will be given and broadcasted on Twitch.';
+      'The week of Friday May 1 to , Sunday May 3 at  20:00 hr (IST) two Flutter talks will be given and broadcasted on Youtube.';
 
   static const String fontfamily = 'assets/fonts/ProductSans.ttf';
   static const organizerjson = "assets/json/organizers.json";
+  static const speakersjson = "assets/json/speakers.json";
 }
