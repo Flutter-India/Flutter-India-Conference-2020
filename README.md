@@ -37,6 +37,36 @@ The communities present under Flutter India are as follows:
 2. Install [Flutter](https://flutter.dev/docs/get-started/install)
 3. Install [Android Studio / IntelliJ / VSCode](https://flutter.dev/docs/development/tools/android-studio)
 
+## Contributing
+
+Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
+
+### Using GitHub Issues
+
+- Feel free to use GitHub issues for questions, bug reports, and feature requests
+- Use the search feature to check for an existing issue
+- Include as much information as possible and provide any relevant resources (Eg. screenshots)
+- For bug reports ensure you have a reproducible test case
+  - A pull request with a breaking test would be super preferable here but isn't required
+
+### Submitting a Pull Request
+
+- Squash commits
+- Lint your code with eslint (config provided)
+- Include relevant test updates/additions
+
+## Contributors
+
+**Maintainer:** [Yash Adulkar](https://github.com/iampawan)
+**Maintainer:** [Aditya Sutar](https://github.com/iampawan)
+
+
+## License
+
+Project is published under the [MIT license](/LICENSE.md).
+Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
+
+
 
 ## Learning Resources
 A few resources to get you started if this is your first Flutter project:
@@ -47,3 +77,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
