@@ -33,7 +33,8 @@ The communities present under Flutter India are as follows:
 
 ## Getting Started
 
-
+1. [Fork repository](https://github.com/elaishane/Flutter-India-Website/fork) and clone your fork locally
+2. Install [Flutter](https://flutter.dev/docs/get-started/install)
 
 
 ## Learning Resources
