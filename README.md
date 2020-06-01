@@ -6,12 +6,17 @@
 
 <p align="center">
 <a href="https://flutterindia.dev/">&#127760; Website</a>
-<span class="tab"></span>
+
 <a href="#getting-started">:rocket:Get Started</a>
 </p>
 
 ## Overview
-Flutter India Website is a first community which is completely developed using Flutter Web
+Flutter India Website is a first community website which is completely developed using Flutter Web. It is made for Flutter India Community which will show all the updates about Flutter India Community.
+
+## Technology Stack
+
+- Flutter
+- Firebase
 
 ## Getting Started
 
