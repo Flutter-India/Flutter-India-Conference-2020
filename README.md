@@ -64,7 +64,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 ## License
 
-Project is published under the [MIT license](/LICENSE.md).
+Project is published under the [MIT license](License.md).
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
 
 
