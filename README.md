@@ -61,6 +61,8 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 **Maintainer:** [Aditya Sutar](https://github.com/aditya305)
 
+[Vivek Yadav](https://github.com/viveky259259)
+
 
 ## License
 
