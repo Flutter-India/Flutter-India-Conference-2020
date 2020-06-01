@@ -54,3 +54,7 @@ class Curved extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
+
+
+// This code was written by Robert Felker
+// Codepen Link: https://codepen.io/blueaquilae/pen/ExVZJqp
