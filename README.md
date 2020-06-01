@@ -58,6 +58,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 ## Contributors
 
 **Maintainer:** [Yash Adulkar](https://github.com/elaishane)
+
 **Maintainer:** [Aditya Sutar](https://github.com/aditya305)
 
 
