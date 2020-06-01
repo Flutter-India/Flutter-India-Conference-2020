@@ -10,7 +10,9 @@
 </p>
 
 ## Overview
-Flutter India Website is a first community website which is completely developed using Flutter Web. It is made for Flutter India Community which will show all the updates about Flutter India Community.
+Flutter India Website is a first community website which is completely developed using Flutter Web. 
+It is made for Flutter India Community which will show all the updates about Flutter India Community.
+This is the repository of Flutter India Community.
 
 ### What is Flutter India
 Flutter India is an initiative of all the communities in India. 
@@ -62,6 +64,8 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 **Maintainer:** [Aditya Sutar](https://github.com/aditya305)
 
 [Vivek Yadav](https://github.com/viveky259259)
+
+[Aniket Chavan]()
 
 
 ## License
