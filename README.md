@@ -35,6 +35,7 @@ The communities present under Flutter India are as follows:
 
 1. [Fork repository](https://github.com/elaishane/Flutter-India-Website/fork) and clone your fork locally
 2. Install [Flutter](https://flutter.dev/docs/get-started/install)
+3. Install [Android Studio / IntelliJ / VSCode](https://flutter.dev/docs/development/tools/android-studio)
 
 
 ## Learning Resources
