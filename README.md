@@ -15,16 +15,16 @@ Flutter India Website is a first community website which is completely developed
 ### What is Flutter India
 Flutter India is an initiative of all the communities in India. 
 The communities present under Flutter India are as follows:
-1. Flutter Mumbai Community
-2. Flutter Ahemdabad
-3. Flutter Surat
-4. Flutter Pune
-5. Flutter Gwalior
-6. Flutter Bangalore
-7. Flutter Vadodara
-8. Flutter Nagpur
-9. Flutter Hyderabad
-10. Flutter Kerala
+1. <a href="https://www.meetup.com/Mumbai-Flutter/">Flutter Mumbai Community</a>
+2. <a href="https://www.meetup.com/FlutterAHM/">Flutter Ahemdabad</a>
+3. <a href="https://twitter.com/fluttervadodara">Flutter Surat</a>
+4. <a href="https://www.meetup.com/Flutter-Pune-Development-Meetup/">Flutter Pune</a>
+5. <a href="https://www.meetup.com/Gwalior-Flutter-Meetup-Group/">Flutter Gwalior</a>
+6. <a href="https://www.meetup.com/flutter-bangalore-group/">Flutter Bangalore</a>
+7. <a href="https://twitter.com/fluttervadodara">Flutter Vadodara</a>
+8. <a href="https://www.meetup.com/flutterngp/">Flutter Nagpur</a>
+9. <a href="https://www.meetup.com/Flutter-Hyderabad/">Flutter Hyderabad</a>
+10. <a href="https://twitter.com/flutterkerala/">Flutter Kerala</a>
 
 ## Technology Stack
 
