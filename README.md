@@ -71,11 +71,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 ## License
 
-Project is published under the [MIT license](License.md).
-
-Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
-
-
+Project is published under [BSD 3-Clause License](LICENSE).
 
 ## Learning Resources
 A few resources to get you started if this is your first Flutter project:
