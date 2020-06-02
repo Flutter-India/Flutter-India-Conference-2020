@@ -61,6 +61,10 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 [Vivek Yadav](https://github.com/viveky259259)
 
+[Yash Adulkar](https://github.com/elaishane)
+
+[Aditya Sutar](https://github.com/aditya305)
+
 [Aniket Chavan](https://github.com/ANIKET2017)
 
 
