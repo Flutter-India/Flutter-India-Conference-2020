@@ -112,7 +112,7 @@ class ContactUs extends StatelessWidget {
                 GestureDetector(
                   onTap: () async {
                     String url =
-                        'https://fluttercommunityindia.slack.com/join/shared_invite/zt-ds4x0r8j-gjjnS~se5RLRy4suELR6xQ';
+                        'https://join.slack.com/t/fluttercommunityindia/shared_invite/zt-ewhb1p50-6515IPymTDXRyv7Z9UbylA';
                     if (await canLaunch(url)) {
                       await launch(url);
                     } else {
