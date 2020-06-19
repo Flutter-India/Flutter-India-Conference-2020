@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -33,7 +32,6 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: HomePageNew(),
-//      initialRoute: HomePage.tag,
       routes: {
         HomePageNew.tag: (context) => HomePageNew(),
       },
