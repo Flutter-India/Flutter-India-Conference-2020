@@ -9,9 +9,14 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 - Include as much information as possible and provide any relevant resources (Eg. screenshots)
 - For bug reports ensure you have a reproducible test case
   - A pull request with a breaking test would be super preferable here but isn't required
+  
+## Getting Started
+- Fork the repository
+- Send your commits
+- Submit a Pull request
 
 ## Submitting a Pull Request
+- Write appropriate title
+- Wrtie a proper description including the issue name and solution
 
-- Squash commits
-- Lint your code with eslint (config provided)
-- Include relevant test updates/additions
+
