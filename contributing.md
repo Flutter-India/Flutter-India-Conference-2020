@@ -15,8 +15,4 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 - Send your commits
 - Submit a Pull request
 
-## Submitting a Pull Request
-- Write appropriate title
-- Wrtie a proper description including the issue name and solution
-
 
