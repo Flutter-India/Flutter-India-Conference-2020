@@ -36,8 +36,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: 'Opening Keynote',
                 speakerName: 'Nilay Yener',
-                image:
-                    "https://media-exp1.licdn.com/dms/image/C5603AQE28GphB8V4dw/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=FEZhJm_ZZo37P13N5ubsL28bfayT30YxNo0vYWy6RaQ",
+                image: "https://i.ibb.co/YPGk4ts/1538867099796.jpg",
                 time: '20:30 - 21:00 IST',
               ),
               SizedBox(
@@ -46,8 +45,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: 'Grips of Flutter futures and async',
                 speakerName: "Gazihan Alankus",
-                image:
-                    "https://pbs.twimg.com/profile_images/993770834467713025/K5X6ep1z_400x400.jpg",
+                image: "https://i.ibb.co/ZdKzwyk/412997.jpg",
                 time: '21:10 - 21:50 IST',
               ),
               SizedBox(
@@ -56,8 +54,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: 'Responsive Web Apps in Flutter',
                 speakerName: "Hasnen Tai",
-                image:
-                    "https://media-exp1.licdn.com/dms/image/C5103AQFdQODgeXBrlw/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=ndU5vjiI901UQWpxBFQMXdwloL7JxOJ7Jp5YVyTse9E",
+                image: "https://i.ibb.co/bRmnbVX/1577189169479.jpg",
                 time: '22:00 - 22:40 IST',
               ),
             ],
@@ -80,8 +77,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: 'Efficient Internationalization of Flutter Apps',
                 speakerName: 'Dominik Roszkowski',
-                image:
-                    "https://pbs.twimg.com/profile_images/1188517161192558593/gZC6Far3_400x400.jpg",
+                image: "https://i.ibb.co/Wx2TLR4/1605258985165.jpg",
                 time: '20:30 - 21:10 IST',
               ),
               SizedBox(
@@ -90,8 +86,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: 'State Management in Flutter',
                 speakerName: "Bhavesh Daswani",
-                image:
-                    "https://pbs.twimg.com/profile_images/1250139555488862208/bsw1yfOC_400x400.jpg",
+                image: "https://i.ibb.co/t21GP9v/1593144268626.jpg",
                 time: '21:20 - 22:00 IST',
               ),
               SizedBox(
@@ -100,8 +95,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: "What's new in Flutter Design Engineering",
                 speakerName: "Will Larche",
-                image:
-                    "https://media-exp1.licdn.com/dms/image/C4D03AQFrtI6urM2JqQ/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=T3_RZMb4M9sqYNQXPuEty295eaXiQPie7XBAIVGKYfU",
+                image: "https://i.ibb.co/5xvMjgv/1564173203214.jpg",
                 time: '22:10 - 22:40 IST',
               ),
             ],
@@ -123,8 +117,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                 eventName:
                     'Scaling Flutter Architecture by Leveraging strategic Domain-Driven Design',
                 speakerName: 'Majid Hajian',
-                image:
-                    "https://media-exp1.licdn.com/dms/image/C5603AQGK-HeI_eFltQ/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=ZqZu8cD8_m3mxc3190309XwmRFXYkksNKfxn3XvuBG4",
+                image: "https://i.ibb.co/vD26Pvc/1613316921147.jpg",
                 time: '20:30 - 21:10 IST',
               ),
               SizedBox(
@@ -139,7 +132,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                           ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
                       backgroundColor: Colors.white,
                       backgroundImage: NetworkImage(
-                          'https://media-exp1.licdn.com/dms/image/C5103AQE6FmDS53qniw/profile-displayphoto-shrink_800_800/0?e=1593648000&v=beta&t=m1BAU9nuIzq9dB2Va1SdUmsjYf9AzPQanMu21FXcXT0'),
+                          'https://i.ibb.co/DtjL0Jn/1553373963950.jpg'),
                     ),
                     SizedBox(
                       width: 10.0,
@@ -149,7 +142,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                           ResponsiveWidget.isSmallScreen(context) ? 30.0 : 45.0,
                       backgroundColor: Colors.white,
                       backgroundImage: NetworkImage(
-                        'https://pbs.twimg.com/profile_images/1185228274332397574/Mny9r1EW_400x400.jpg',
+                        'https://i.ibb.co/DL1dfg9/1550405718408.jpg',
                       ),
                     ),
                     SizedBox(
@@ -209,8 +202,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               EventCard(
                 eventName: 'Ending Keynote',
                 speakerName: "Nikita Gandhi",
-                image:
-                    "https://pbs.twimg.com/profile_images/1143451540255956992/0AoRnzLP_400x400.jpg",
+                image: "https://i.ibb.co/kgwsrWc/1578467205054.jpg",
                 time: '22:10 - 22:50 IST',
               ),
             ],
